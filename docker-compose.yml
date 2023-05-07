@@ -18,7 +18,7 @@ services:
       PORT: 3000
       NODE_ENV: development
       MONGODB_URI: mongodb+srv://gugunny32:NOmoneys32@guncluster0.yzbeug9.mongodb.net/onlinenodeapi?retryWrites=true&w=majority
-      DOMAIN: nodeapi:3000/
+      DOMAIN: http://localhost:4000/
     depends_on:
       - mongo_db
 
