@@ -1,0 +1,72 @@
+###Get a list of all companys
+GET http://localhost:3000/company
+
+###Get a list of all staffs
+GET http://localhost:3000/staff
+
+###Get staff by id
+GET http://localhost:3000/staff/643e0aa9884d1e312385adbe
+
+###Update staff by id
+PUT http://localhost:3000/staff/643e76ffa708a1ee259e981f
+Content-Type: application/json
+
+{
+    "name" : "Ronaldo",
+    "salary" : 25000
+}
+
+### Create a staff
+POST http://localhost:3000/staff
+Content-Type: application/json
+
+{
+    "name" : "James",
+    "salary" : 70000
+}
+
+### Delete staff by id
+DELETE http://localhost:3000/staff/643e752343a0034911a83143
+
+###Get a list of all shops
+GET http://localhost:3000/shop
+
+### Create a shop
+POST http://localhost:3000/shop
+Content-Type: application/json
+
+{
+    "name" : "ร้านอาหารทดสอบ2",
+    "location" : {
+                "lat": 15.2225434,
+                "lgn": 104.8743425
+    }
+}
+
+### GET a shop with menus by id
+GET http://localhost:3000/shop/5d53ba4a9517686fe8d6ef3a
+
+###GET a list of menus
+GET http://localhost:3000/shop/menu
+
+###Register a user
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+    "name" : "muay",
+    "email" : "muay@gmail.com",
+    "password" : "123456"
+}
+
+###GET a list of user
+GET http://localhost:3000/user
+
+###Login
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email" : "may@gmail.com",
+    "password" : "654321"
+}
